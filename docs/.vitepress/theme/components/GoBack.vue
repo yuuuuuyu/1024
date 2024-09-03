@@ -1,29 +1,31 @@
 <template>
-  <t-button
-    v-if="isPosts && !frontmatter.isNoBackBtn"
-    theme="default"
-    variant="dashed"
-    style="margin-bottom: 10px"
-    @click="goBack"
-  >
-    <template #icon><RollbackIcon /></template>
-    {{ isEN ? "Go back " : "返回上一页" }}
-  </t-button>
-  <t-button
-    v-if="isPosts && !frontmatter.isNoBackBtn"
-    theme="default"
-    variant="dashed"
-    style="margin-bottom: 10px"
-    @click="goBack"
-  >
-    <template #icon><RollbackIcon /></template>
-    复制短链接
-  </t-button>
+  <div class="button-group">
+    <t-button
+      v-if="isPosts && !frontmatter.isNoBackBtn"
+      theme="default"
+      variant="dashed"
+      style="margin-bottom: 10px"
+      @click="goBack"
+    >
+      <template #icon><RollbackIcon /></template>
+      {{ isEN ? "Go back " : "返回上一页" }}
+    </t-button>
+    <t-button
+      v-if="!frontmatter.isNoBackBtn"
+      theme="primary"
+      style="margin-bottom: 10px"
+      variant="dashed"
+      @click="goBack"
+    >
+      <template #icon><CopyIcon /></template>
+      复制短链接
+    </t-button>
+  </div>
 </template>
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue"
 import { useRoute, useData } from "vitepress"
-import { RollbackIcon } from "tdesign-icons-vue-next"
+import { RollbackIcon, CopyIcon } from "tdesign-icons-vue-next"
 
 const route = useRoute()
 const isEN = computed(() => route.path.startsWith("/en"))
@@ -53,6 +55,16 @@ onUnmounted(() => {
 })
 </script>
 <style scoped>
+.button-group {
+  display: flex;
+  button {
+    flex: 1;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 .img-container {
   height: 105px;
   width: 100px;

@@ -25,6 +25,8 @@ export default defineConfig({
 
     sidebar: createSideBarZH(),
 
+    logo: "/logo.png",
+
     socialLinks: [{ icon: "github", link: "https://github.com/yuuuuuyu" }],
 
     editLink: {

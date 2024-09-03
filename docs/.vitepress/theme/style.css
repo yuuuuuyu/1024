@@ -184,3 +184,7 @@ main>div>div>pre>code {
     /* scrollbar-color: rgba(0, 0, 0, 0.12) transparent; */
     scrollbar-width: thin;
 }
+
+.aside .aside-container {
+    width: 320px;
+}

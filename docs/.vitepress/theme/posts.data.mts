@@ -18,8 +18,6 @@ export declare const data: Post[]
 export default createContentLoader("posts/**/*.md", {
   excerpt: excerptFn,
   transform(raw): Post[] {
-    console.log(raw, "====")
-
     return raw
       .map(({ url, frontmatter, excerpt }) => ({
         title: frontmatter.title,
@@ -36,6 +34,8 @@ function excerptFn(
   file: { data: { [key: string]: any }; content: string; excerpt?: string },
   options?: any
 ) {
+  console.log(file, "2222222")
+
   file.excerpt = file.content.split("<!-- DESC SEP -->")[1]
 }
 
@@ -58,3 +58,4 @@ function formatDate(raw: string): Post["date"] {
     }),
   }
 }
+
