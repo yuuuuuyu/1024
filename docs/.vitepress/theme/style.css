@@ -139,16 +139,9 @@ main>div>div>pre>code {
 }
 
 /** 磨砂玻璃效果设置 */
-.VPNavBar {
+/* .VPNavBar {
     background-color: transparent !important;
-}
-
-.VPNav .content .content-body {
-    backdrop-filter: blur(36px);
-    background-color: linear-gradient(to bottom,
-            rgba(var(--vp-nav-bg-color), 0.98),
-            rgba(var(--vp-nav-bg-color), 0.6)) !important;
-}
+} */
 
 .VPLocalNav,
 .VPLocalNav .container {

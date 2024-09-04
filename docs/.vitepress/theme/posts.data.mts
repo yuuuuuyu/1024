@@ -34,8 +34,6 @@ function excerptFn(
   file: { data: { [key: string]: any }; content: string; excerpt?: string },
   options?: any
 ) {
-  console.log(file, "2222222")
-
   file.excerpt = file.content.split("<!-- DESC SEP -->")[1]
 }
 

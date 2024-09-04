@@ -13,8 +13,15 @@ export default defineConfig({
     nav: [
       { text: "博客", link: "/" },
       { text: "归档", link: "/archive", activeMatch: "/archive" },
+      {
+        text: "蜂舟平台",
+        items: [
+          { text: "Bugs", link: "/bugs", activeMatch: "/bugs" },
+          { text: "技巧", link: "/skills", activeMatch: "/skills" },
+        ],
+      },
       { text: "笔记", link: "/notes/", activeMatch: "/notes/" },
-      { text: "关于", link: "/about", activeMatch: "/about" },
+      { text: "工具", link: "/tools", activeMatch: "/tools" },
     ],
     docFooter: {
       prev: "上一篇",
@@ -27,7 +34,10 @@ export default defineConfig({
 
     logo: "/logo.png",
 
-    socialLinks: [{ icon: "github", link: "https://github.com/yuuuuuyu" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/yuuuuuyu" },
+      { icon: "github", link: "https://github.com/yuuuuuyu" },
+    ],
 
     editLink: {
       pattern:
