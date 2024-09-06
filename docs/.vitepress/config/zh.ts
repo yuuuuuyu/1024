@@ -16,8 +16,8 @@ export default defineConfig({
       {
         text: "蜂舟平台",
         items: [
-          { text: "Bugs", link: "/bugs", activeMatch: "/bugs" },
-          { text: "技巧", link: "/skills", activeMatch: "/skills" },
+          { text: "Bugs", link: "/beeboat/bugs", activeMatch: "/bugs" },
+          { text: "技巧", link: "/beeboat/skills", activeMatch: "/skills" },
         ],
       },
       { text: "笔记", link: "/notes/", activeMatch: "/notes/" },

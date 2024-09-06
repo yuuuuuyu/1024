@@ -1,3 +1,11 @@
+---
+title: 新一代Vue调试工具
+date: 2024-08-01
+tags: 
+  - vite插件
+  - 调试工具
+  - devtools
+---
 # 新一代Vue调试工具vite-plugin-vue-devtools
 
 ## 场景

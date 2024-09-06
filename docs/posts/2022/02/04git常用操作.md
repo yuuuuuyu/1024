@@ -237,7 +237,6 @@ $ git push origin v1.2.4
 $ git revert [pre-tag]
 # 若上一个版本是 v1.2.3，则：
 $ git revert v1.2.3
-复制代码
 ```
 
 在频繁更新，commit 数量庞大的仓库里，用 tag 标识版本显然更清爽，可读性更佳。
