@@ -32,7 +32,6 @@ export default defineConfig({
       gtag('js', new Date());
       gtag('config', 'G-MB7XVBG1TQ');`,
     ],
-
     [
       "link",
       {

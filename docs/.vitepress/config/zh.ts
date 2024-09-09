@@ -16,10 +16,15 @@ export default defineConfig({
       {
         text: "蜂舟平台",
         items: [
-          { text: "Bugs", link: "/beeboat/bugs", activeMatch: "/bugs" },
-          { text: "技巧", link: "/beeboat/skills", activeMatch: "/skills" },
+          {
+            text: "Bugs",
+            link: "/beeboat/bugs/",
+            activeMatch: "/beeboat/bugs/",
+          },
+          { text: "技巧", link: "/beeboat/skills/", activeMatch: "/skills/" },
         ],
       },
+      { text: "蜂舟平台", link: "/beeboat/", activeMatch: "/beeboat/" },
       { text: "笔记", link: "/notes/", activeMatch: "/notes/" },
       { text: "工具", link: "/tools", activeMatch: "/tools" },
     ],
@@ -34,10 +39,7 @@ export default defineConfig({
 
     logo: "/logo.png",
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/yuuuuuyu" },
-      { icon: "github", link: "https://github.com/yuuuuuyu" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/yuuuuuyu" }],
 
     editLink: {
       pattern:

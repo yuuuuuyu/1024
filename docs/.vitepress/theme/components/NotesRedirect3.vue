@@ -10,7 +10,7 @@ const route = useRoute()
 const { path } = route
 const sideBar = createSideBarZH()
 
-const prefix = "/bugs/"
+const prefix = "/beeboat/"
 const firstItemLink = sideBar[prefix][0].items[0].link
 
 router.go(firstItemLink)
