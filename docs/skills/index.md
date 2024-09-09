@@ -6,7 +6,7 @@ lastUpdated: false
 isNoBackBtn: false
 ---
 
-<NotesRedirect prefix="/beeboat/" />
+<NotesRedirect prefix="/skills/" />
 
 <script lang="ts" setup>
 import NotesRedirect from '../.vitepress/theme/components/NotesRedirect.vue'

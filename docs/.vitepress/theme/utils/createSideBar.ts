@@ -347,81 +347,243 @@ export function createSideBarZH() {
         items: [],
       },
     ].map((item, i) => (!i ? item : { ...item, collapsed: true })),
-    "/beeboat/": [
+
+    "/bugs/": [
       {
-        text: "Bugs",
+        text: "Vite",
         collapsed: false,
         items: [
           {
-            text: "Pagination分页器默认英文",
-            link: "/beeboat/bugs/elementplus/question/1",
-          },
-          {
-            text: "ElementPlus升级后多语言报错",
-            link: "/beeboat/bugs/elementplus/question/2",
-          },
-          {
-            text: "蜂舟拖拽表格列名不显示中文",
-            link: "/beeboat/bugs/beeboat/question/1",
-          },
-          {
-            text: "MicroApp基座切换应用跳转登录",
-            link: "/beeboat//bugs/beeboat/question/2",
-          },
-          {
-            text: "表格高亮异常/排序后序号列异常",
-            link: "/beeboat/bugs/beeboat/question/3",
-          },
-          {
-            text: "BtTable2修改表格列名不生效",
-            link: "/beeboat/bugs/beeboat/question/4",
-          },
-          {
-            text: "senceDataList.forEach is not a function..",
-            link: "/beeboat/bugs/beeboat/question/5",
-          },
-          {
-            text: "蜂舟列设置左/右冻结不生效",
-            link: "/beeboat/bugs/beeboat/question/6",
-          },
-          {
-            text: "蜂舟平台表格展示的数据和接口返回不一致",
-            link: "/beeboat/bugs/beeboat/question/7",
-          },
-          {
-            text: "子应用刷新后pinia数据被清空",
-            link: "/beeboat/bugs/beeboat/question/8",
-          },
-          {
-            text: "tinymce富文本线上环境报错404",
-            link: "/beeboat/bugs/beeboat/question/9",
-          },
-          {
             text: "打包报错 JavaScript heap out of memory",
-            link: "/beeboat/bugs/vite/question/01JavaScriptHeapOutOfMemory",
+            link: "/bugs/vite/question/01JavaScriptHeapOutOfMemory",
           },
           {
             text: "打包报错 ENOENT: no such file or directory, scandir xxxxx",
-            link: "/beeboat/bugs/vite/question/02NoSuchFileOrDirectoryScandir",
+            link: "/bugs/vite/question/02NoSuchFileOrDirectoryScandir",
           },
           {
             text: "打包报错 [vite]: Rollup failed to resolve import xxxxx",
-            link: "/beeboat/bugs/vite/question/03RollupFailedToResolveImport",
+            link: "/bugs/vite/question/03RollupFailedToResolveImport",
           },
           {
             text: "使用了CommonJS模块该如何处理",
-            link: "/beeboat/bugs/vite/question/04使用了CommonJS模块该如何处理",
-          },
-          {
-            text: "Vue3 项目启动报错isFunction is not a function",
-            link: "/beeboat/bugs/vue/question/1",
+            link: "/bugs/vite/question/04使用了CommonJS模块该如何处理",
           },
         ],
       },
       {
-        text: "技巧",
+        text: "Vue",
         collapsed: false,
-        item: [],
+        items: [
+          {
+            text: "Vue3 项目启动报错isFunction is not a function",
+            link: "/bugs/vue/question/1",
+          },
+        ],
+      },
+      {
+        text: "ElementPlus",
+        collapsed: false,
+        items: [
+          {
+            text: "Pagination分页器默认英文",
+            link: "/bugs/elementplus/question/1",
+          },
+          {
+            text: "ElementPlus升级后多语言报错",
+            link: "/bugs/elementplus/question/2",
+          },
+        ],
+      },
+      {
+        text: "Beeboat",
+        collapsed: false,
+        items: [
+          {
+            text: "蜂舟拖拽表格列名不显示中文",
+            link: "/bugs/beeboat/question/1",
+          },
+          {
+            text: "MicroApp基座切换应用跳转登录",
+            link: "/bugs/beeboat/question/2",
+          },
+          {
+            text: "表格高亮异常/排序后序号列异常",
+            link: "/bugs/beeboat/question/3",
+          },
+          {
+            text: "BtTable2修改表格列名不生效",
+            link: "/bugs/beeboat/question/4",
+          },
+          {
+            text: "senceDataList.forEach is not a function..",
+            link: "/bugs/beeboat/question/5",
+          },
+          {
+            text: "蜂舟列设置左/右冻结不生效",
+            link: "/bugs/beeboat/question/6",
+          },
+          {
+            text: "蜂舟平台表格展示的数据和接口返回不一致",
+            link: "/bugs/beeboat/question/7",
+          },
+          {
+            text: "子应用刷新后pinia数据被清空",
+            link: "/bugs/beeboat/question/8",
+          },
+          {
+            text: "tinymce富文本线上环境报错404",
+            link: "/bugs/beeboat/question/9",
+          },
+        ],
+      },
+    ].map((item, i) => (!i ? item : { ...item, collapsed: true })),
+
+    "/skills/": [
+      {
+        text: "Beeboat",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: "async/await在蜂舟上妙用",
+            link: "/skills/beeboat/07await在蜂舟上妙用",
+          },
+          {
+            text: "Vue文件中监听Class中的变量",
+            link: "/skills/beeboat/06Vue文件中监听Class中的变量",
+          },
+          {
+            text: "使用代码片段重写表格列",
+            link: "/skills/beeboat/01使用代码片段重写表格列",
+          },
+          {
+            text: "使用代码片段实现动态列",
+            link: "/skills/beeboat/02使用代码片段实现动态列",
+          },
+          {
+            text: "使用代码片段实现表头合并",
+            link: "/skills/beeboat/03使用代码片段实现表头合并",
+          },
+          {
+            text: "重写组件事件/属性",
+            link: "/skills/beeboat/04重写组件事件",
+          },
+          {
+            text: "重写组件事件使用emit",
+            link: "/skills/beeboat/05重写组件事件使用emit",
+          },
+          {
+            text: "[逻辑事件系列1] 通过判断行数据指定字段来控制按钮的禁用启用",
+            link: "/skills/beeboat/logic/1",
+          },
+          {
+            text: "[逻辑事件系列2] 通过判断表格多选数据来控制按钮的禁用启用",
+            link: "/skills/beeboat/logic/2",
+          },
+        ],
+      },
+      {
+        text: "Beeboat新功能使用说明",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: "新组件",
+            collapsible: true,
+            collapsed: false,
+            items: [
+              {
+                text: "新增的弹窗组件如何使用",
+                link: "/skills/use/01弹窗组件的使用",
+              },
+            ],
+          },
+          {
+            text: "后端逻辑编排",
+            collapsible: true,
+            collapsed: false,
+            items: [
+              {
+                text: "后端逻辑编排",
+                link: "/skills/use/10后端逻辑编排",
+              },
+            ],
+          },
+          {
+            text: "前端逻辑编排",
+            collapsible: true,
+            collapsed: false,
+            items: [
+              {
+                text: "前端逻辑编排-模板",
+                link: "/skills/use/12前端逻辑编排模板的使用",
+              },
+              {
+                text: "从pinia中取值",
+                link: "/skills/use/14从pinia中取值",
+              },
+            ],
+          },
+          {
+            text: "如何配置带入参的数据源",
+            collapsible: true,
+            collapsed: false,
+            items: [
+              {
+                text: "表格的数据源改造",
+                link: "/skills/use/02表格的数据源改造",
+              },
+              {
+                text: "表单的数据源改造",
+                link: "/skills/use/03表单的数据源改造",
+              },
+              {
+                text: "下拉框的数据源改造",
+                link: "/skills/use/04下拉框的数据源改造",
+              },
+              {
+                text: "下拉树的数据源改造",
+                link: "/skills/use/05下拉树的数据源改造",
+              },
+              {
+                text: "树的数据源改造",
+                link: "/skills/use/06树的数据源改造",
+              },
+            ],
+          },
+          {
+            text: "业务场景demo",
+            collapsible: true,
+            collapsed: false,
+            items: [
+              {
+                text: "左右联动的逻辑事件",
+                link: "/skills/use/07左右联动的逻辑事件",
+              },
+              {
+                text: "表单多个下拉级联的逻辑事件",
+                link: "/skills/use/08表单多个下拉级联的逻辑事件",
+              },
+              {
+                text: "表单form-item中多个表单元素",
+                link: "/skills/use/15form-item组件",
+              },
+              {
+                text: "弹窗组件中使用自定义组件",
+                link: "/skills/use/09弹窗组件中使用自定义组件",
+              },
+              {
+                text: "表格行内编辑",
+                link: "/skills/use/11行内编辑功能使用",
+              },
+              {
+                text: "表格批量删除&变量进阶",
+                link: "/skills/use/13变量进阶使用",
+              },
+            ],
+          },
+        ],
       },
     ].map((item, i) => (!i ? item : { ...item, collapsed: true })),
   }

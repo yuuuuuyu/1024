@@ -18,13 +18,12 @@ export default defineConfig({
         items: [
           {
             text: "Bugs",
-            link: "/beeboat/bugs/",
-            activeMatch: "/beeboat/bugs/",
+            link: "/bugs/",
+            activeMatch: "/bugs/",
           },
-          { text: "技巧", link: "/beeboat/skills/", activeMatch: "/skills/" },
+          { text: "技巧", link: "/skills/", activeMatch: "/skills/" },
         ],
       },
-      { text: "蜂舟平台", link: "/beeboat/", activeMatch: "/beeboat/" },
       { text: "笔记", link: "/notes/", activeMatch: "/notes/" },
       { text: "工具", link: "/tools", activeMatch: "/tools" },
     ],

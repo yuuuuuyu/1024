@@ -16,7 +16,10 @@ const route = useRoute()
 const { path } = route
 const sideBar = createSideBarZH()
 
+console.log(sideBar[props.prefix][0])
+
 const firstItemLink = sideBar[props.prefix][0].items[0].link
+console.log(firstItemLink)
 
 router.go(firstItemLink)
 </script>
