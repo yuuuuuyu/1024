@@ -15,7 +15,7 @@
       theme="primary"
       style="margin-bottom: 10px"
       variant="dashed"
-      @click="goBack"
+      @click="copyLink"
     >
       <template #icon><CopyIcon /></template>
       复制短链接
@@ -34,7 +34,7 @@ const isPosts = computed(
 )
 const { frontmatter } = useData()
 
-function goBack() {
+const goBack = () => {
   if (window.history.length <= 1) {
     location.href = "/"
   } else {
@@ -43,6 +43,7 @@ function goBack() {
   }
 }
 
+const copyLink = () => {}
 const hashChangeCount = ref(-1)
 onMounted(() => {
   window.onhashchange = () => {
