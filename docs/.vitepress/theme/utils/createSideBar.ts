@@ -2,6 +2,53 @@ export function createSideBarZH() {
   return {
     "/notes/": [
       {
+        text: "Vue相关",
+        collapsed: false,
+        items: [
+          {
+            text: "Vue3是如何运行的",
+            link: "/notes/Vue相关/01Vue3是如何运行的",
+          },
+          { text: "Vue3编译器", link: "/notes/Vue相关/02Vue3编译器" },
+          { text: "虚拟DOM", link: "/notes/Vue相关/03虚拟DOM" },
+          { text: "Vue3-Reactivity", link: "/notes/Vue相关/04Vue3-Reactivity" },
+          //   { text: "Mini-Vue", link: "/notes/Vue相关/05Mini-Vue" },
+          { text: "Vue3其他", link: "/notes/Vue相关/06Vue3其他" },
+          {
+            text: "Vue2不能监听数组下标?",
+            link: "/notes/Vue相关/07Vue2不能监听数组下标",
+          },
+          {
+            text: "Vue2和Vue3的区别",
+            link: "/notes/Vue相关/08Vue2和Vue3的区别",
+          },
+          { text: "组合式函数", link: "/notes/Vue相关/09组合式函数" },
+          {
+            text: "Vue3中ref和reactive的区别",
+            link: "/notes/Vue相关/10Vue3中ref和reactive的区别",
+          },
+          { text: "Vue3的diff算法", link: "/notes/Vue相关/11Vue3的diff算法" },
+        ],
+      },
+      {
+        text: "前端八股文",
+        collapsed: false,
+        items: [
+          { text: "HTML", link: "/notes/前端八股文/01HTML" },
+          { text: "CSS", link: "/notes/前端八股文/02CSS" },
+          { text: "JavaScript", link: "/notes/前端八股文/03JavaScript" },
+          { text: "Vue", link: "/notes/前端八股文/04Vue" },
+          { text: "计算机网络", link: "/notes/前端八股文/05计算机网络" },
+          { text: "浏览器原理", link: "/notes/前端八股文/06浏览器原理" },
+          { text: "性能优化", link: "/notes/前端八股文/07性能优化" },
+        ],
+      },
+      {
+        text: "CSS相关[待更新]",
+        collapsed: false,
+        items: [],
+      },
+      {
         text: "Python基础",
         collapsed: false,
         items: [
@@ -101,233 +148,202 @@ export function createSideBarZH() {
           },
         ],
       },
-      {
-        text: "Rust基础学习",
-        collapsed: false,
-        items: [
-          { text: "01认识Cargo", link: "/notes/Rust基础学习/01认识Cargo" },
-          {
-            text: "02变量绑定与解构",
-            link: "/notes/Rust基础学习/02变量绑定与解构",
-          },
-          { text: "03基本类型", link: "/notes/Rust基础学习/03基本类型" },
-          {
-            text: "04所有权与借用",
-            link: "/notes/Rust基础学习/04所有权与借用",
-          },
-          { text: "05复合类型", link: "/notes/Rust基础学习/05复合类型" },
-          { text: "06流程控制", link: "/notes/Rust基础学习/06流程控制" },
-          { text: "07模式匹配", link: "/notes/Rust基础学习/07模式匹配" },
-          { text: "08方法Method", link: "/notes/Rust基础学习/08方法Method" },
-          { text: "09泛型", link: "/notes/Rust基础学习/09泛型" },
-          { text: "10特征", link: "/notes/Rust基础学习/10特征" },
-          { text: "11特征对象", link: "/notes/Rust基础学习/11特征对象" },
-          { text: "12深入特征", link: "/notes/Rust基础学习/12深入特征" },
-          {
-            text: "13动态数组Vector",
-            link: "/notes/Rust基础学习/13动态数组Vector",
-          },
-          {
-            text: "14KV存储HashMap",
-            link: "/notes/Rust基础学习/14KV存储HashMap",
-          },
-          {
-            text: "15认识生命周期",
-            link: "/notes/Rust基础学习/15认识生命周期",
-          },
-          {
-            text: "16返回值和错误处理",
-            link: "/notes/Rust基础学习/16返回值和错误处理",
-          },
-          { text: "17包和模块", link: "/notes/Rust基础学习/17包和模块" },
-          { text: "18注释和文档", link: "/notes/Rust基础学习/18注释和文档" },
-          { text: "19格式化输出", link: "/notes/Rust基础学习/19格式化输出" },
-          {
-            text: "20实战-文件搜索工具",
-            link: "/notes/Rust基础学习/20实战-文件搜索工具",
-          },
-        ],
-      },
-      {
-        text: "微前端设计与实现笔记",
-        collapsed: false,
-        items: [
-          { text: "01前端概览", link: "/notes/微前端设计与实现/01前端概览" },
-          {
-            text: "02微前端原则",
-            link: "/notes/微前端设计与实现/02微前端原则",
-          },
-          {
-            text: "03微前端的架构和挑战",
-            link: "/notes/微前端设计与实现/03微前端的架构和挑战",
-          },
-          {
-            text: "04探索微前端架构",
-            link: "/notes/微前端设计与实现/04探索微前端架构",
-          },
-          { text: "05其他", link: "/notes/微前端设计与实现/05其他" },
-        ],
-      },
-      {
-        text: "ChatGPT提示学习笔记",
-        collapsed: false,
-        items: [
-          {
-            text: "1_2引言—指示",
-            link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记1_2",
-          },
-          {
-            text: "3迭代",
-            link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记3",
-          },
-          {
-            text: "4摘要",
-            link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记4",
-          },
-          {
-            text: "5推理",
-            link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记5",
-          },
-          {
-            text: "6转换",
-            link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记6",
-          },
-          {
-            text: "7扩展",
-            link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记7",
-          },
-          {
-            text: "8聊天机器人",
-            link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记8",
-          },
-        ],
-      },
-      {
-        text: "算法与数据结构",
-        collapsed: false,
-        items: [
-          { text: "基础概念", link: "/notes/算法与数据结构/01基础概念" },
-          { text: "线性表", link: "/notes/算法与数据结构/02线性表" },
-          { text: "栈和队列", link: "/notes/算法与数据结构/03栈和队列" },
-          { text: "数组", link: "/notes/算法与数据结构/04数组" },
-          { text: "树", link: "/notes/算法与数据结构/05树" },
-          { text: "图", link: "/notes/算法与数据结构/06图" },
-          { text: "查找", link: "/notes/算法与数据结构/07查找" },
-          { text: "排序", link: "/notes/算法与数据结构/08排序" },
-          { text: "算法概述", link: "/notes/算法与数据结构/10算法概述" },
-          { text: "递归与分治", link: "/notes/算法与数据结构/11递归与分治" },
-          { text: "动态规划", link: "/notes/算法与数据结构/12动态规划" },
-          { text: "贪心算法", link: "/notes/算法与数据结构/13贪心算法" },
-          {
-            text: "回溯与分支极限",
-            link: "/notes/算法与数据结构/14回溯与分支界限",
-          },
-          {
-            text: "经典算法实现",
-            link: "/notes/算法与数据结构/15经典算法实现",
-          },
-          { text: "剑指Offer", link: "/notes/算法与数据结构/16剑指Offer" },
-        ],
-      },
-      {
-        text: "计算机基础知识",
-        collapsed: false,
-        items: [
-          {
-            text: "操作系统基础",
-            link: "/notes/计算机基础知识/01操作系统基础",
-          },
-        ],
-      },
-      {
-        text: "数据库一期",
-        collapsed: false,
-        items: [
-          { text: "数据库系统概述", link: "/notes/数据库01/01数据库系统概述" },
-          { text: "关系数据库", link: "/notes/数据库01/02关系数据库" },
-          { text: "SQL(重点)", link: "/notes/数据库01/03SQL(重点)" },
-          {
-            text: "数据库管理与维护(重点)",
-            link: "/notes/数据库01/05数据库管理与维护(重点)",
-          },
-          {
-            text: "关系数据理论(重点)",
-            link: "/notes/数据库01/06关系数据理论(重点)",
-          },
-          { text: "数据库设计", link: "/notes/数据库01/07数据库设计" },
-        ],
-      },
-      {
-        text: "JavaScript[待更新]",
-        collapsed: false,
-        items: [
-          {
-            text: "JS常见手写面试题",
-            link: "/notes/JavaScript/01JS常见手写面试题",
-          },
-        ],
-      },
-      {
-        text: "CSS相关[待更新]",
-        collapsed: false,
-        items: [],
-      },
-      {
-        text: "Vue相关",
-        collapsed: false,
-        items: [
-          {
-            text: "Vue3是如何运行的",
-            link: "/notes/Vue相关/01Vue3是如何运行的",
-          },
-          { text: "Vue3编译器", link: "/notes/Vue相关/02Vue3编译器" },
-          { text: "虚拟DOM", link: "/notes/Vue相关/03虚拟DOM" },
-          { text: "Vue3-Reactivity", link: "/notes/Vue相关/04Vue3-Reactivity" },
-          { text: "Mini-Vue", link: "/notes/Vue相关/05Mini-Vue" },
-          { text: "Vue3其他", link: "/notes/Vue相关/06Vue3其他" },
-        ],
-      },
-      {
-        text: "NestJS",
-        collapsed: false,
-        items: [
-          { text: "controller", link: "/notes/NestJS/01controller" },
-          { text: "service", link: "/notes/NestJS/02service" },
-          { text: "module", link: "/notes/NestJS/03module" },
-          { text: "DTO", link: "/notes/NestJS/04DTO" },
-          { text: "postgreSQL", link: "/notes/NestJS/05postgreSQL" },
-          { text: "原理细节", link: "/notes/NestJS/06原理细节" },
-          { text: "应用配置", link: "/notes/NestJS/07应用配置" },
-          { text: "更多模块", link: "/notes/NestJS/08更多模块" },
-          { text: "openAPI", link: "/notes/NestJS/09openAPI" },
-          { text: "测试", link: "/notes/NestJS/10测试" },
-        ],
-      },
-      {
-        text: "前端八股文",
-        collapsed: false,
-        items: [
-          { text: "HTML", link: "/notes/前端八股文/01HTML" },
-          { text: "CSS", link: "/notes/前端八股文/02CSS" },
-          { text: "JavaScript", link: "/notes/前端八股文/03JavaScript" },
-          { text: "Vue", link: "/notes/前端八股文/04Vue" },
-          { text: "计算机网络", link: "/notes/前端八股文/05计算机网络" },
-          { text: "浏览器原理", link: "/notes/前端八股文/06浏览器原理" },
-          { text: "性能优化", link: "/notes/前端八股文/07性能优化" },
-        ],
-      },
-      {
-        text: "后端储备",
-        collapsed: false,
-        items: [
-          {
-            text: "Django进阶学习笔记",
-            link: "/notes/后端储备/01Django进阶学习笔记",
-          },
-          { text: "DRF学习笔记", link: "/notes/后端储备/02DRF学习笔记" },
-          { text: "Redis学习笔记", link: "/notes/后端储备/03Redis学习笔记" },
-        ],
-      },
+      //   {
+      //     text: "Rust基础学习",
+      //     collapsed: false,
+      //     items: [
+      //       { text: "01认识Cargo", link: "/notes/Rust基础学习/01认识Cargo" },
+      //       {
+      //         text: "02变量绑定与解构",
+      //         link: "/notes/Rust基础学习/02变量绑定与解构",
+      //       },
+      //       { text: "03基本类型", link: "/notes/Rust基础学习/03基本类型" },
+      //       {
+      //         text: "04所有权与借用",
+      //         link: "/notes/Rust基础学习/04所有权与借用",
+      //       },
+      //       { text: "05复合类型", link: "/notes/Rust基础学习/05复合类型" },
+      //       { text: "06流程控制", link: "/notes/Rust基础学习/06流程控制" },
+      //       { text: "07模式匹配", link: "/notes/Rust基础学习/07模式匹配" },
+      //       { text: "08方法Method", link: "/notes/Rust基础学习/08方法Method" },
+      //       { text: "09泛型", link: "/notes/Rust基础学习/09泛型" },
+      //       { text: "10特征", link: "/notes/Rust基础学习/10特征" },
+      //       { text: "11特征对象", link: "/notes/Rust基础学习/11特征对象" },
+      //       { text: "12深入特征", link: "/notes/Rust基础学习/12深入特征" },
+      //       {
+      //         text: "13动态数组Vector",
+      //         link: "/notes/Rust基础学习/13动态数组Vector",
+      //       },
+      //       {
+      //         text: "14KV存储HashMap",
+      //         link: "/notes/Rust基础学习/14KV存储HashMap",
+      //       },
+      //       {
+      //         text: "15认识生命周期",
+      //         link: "/notes/Rust基础学习/15认识生命周期",
+      //       },
+      //       {
+      //         text: "16返回值和错误处理",
+      //         link: "/notes/Rust基础学习/16返回值和错误处理",
+      //       },
+      //       { text: "17包和模块", link: "/notes/Rust基础学习/17包和模块" },
+      //       { text: "18注释和文档", link: "/notes/Rust基础学习/18注释和文档" },
+      //       { text: "19格式化输出", link: "/notes/Rust基础学习/19格式化输出" },
+      //       {
+      //         text: "20实战-文件搜索工具",
+      //         link: "/notes/Rust基础学习/20实战-文件搜索工具",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "微前端设计与实现笔记",
+      //     collapsed: false,
+      //     items: [
+      //       { text: "01前端概览", link: "/notes/微前端设计与实现/01前端概览" },
+      //       {
+      //         text: "02微前端原则",
+      //         link: "/notes/微前端设计与实现/02微前端原则",
+      //       },
+      //       {
+      //         text: "03微前端的架构和挑战",
+      //         link: "/notes/微前端设计与实现/03微前端的架构和挑战",
+      //       },
+      //       {
+      //         text: "04探索微前端架构",
+      //         link: "/notes/微前端设计与实现/04探索微前端架构",
+      //       },
+      //       { text: "05其他", link: "/notes/微前端设计与实现/05其他" },
+      //     ],
+      //   },
+      //   {
+      //     text: "ChatGPT提示学习笔记",
+      //     collapsed: false,
+      //     items: [
+      //       {
+      //         text: "1_2引言—指示",
+      //         link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记1_2",
+      //       },
+      //       {
+      //         text: "3迭代",
+      //         link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记3",
+      //       },
+      //       {
+      //         text: "4摘要",
+      //         link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记4",
+      //       },
+      //       {
+      //         text: "5推理",
+      //         link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记5",
+      //       },
+      //       {
+      //         text: "6转换",
+      //         link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记6",
+      //       },
+      //       {
+      //         text: "7扩展",
+      //         link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记7",
+      //       },
+      //       {
+      //         text: "8聊天机器人",
+      //         link: "/notes/ChatGPT提示学习/ChatGPT提示学习笔记8",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "算法与数据结构",
+      //     collapsed: false,
+      //     items: [
+      //       { text: "基础概念", link: "/notes/算法与数据结构/01基础概念" },
+      //       { text: "线性表", link: "/notes/算法与数据结构/02线性表" },
+      //       { text: "栈和队列", link: "/notes/算法与数据结构/03栈和队列" },
+      //       { text: "数组", link: "/notes/算法与数据结构/04数组" },
+      //       { text: "树", link: "/notes/算法与数据结构/05树" },
+      //       { text: "图", link: "/notes/算法与数据结构/06图" },
+      //       { text: "查找", link: "/notes/算法与数据结构/07查找" },
+      //       { text: "排序", link: "/notes/算法与数据结构/08排序" },
+      //       { text: "算法概述", link: "/notes/算法与数据结构/10算法概述" },
+      //       { text: "递归与分治", link: "/notes/算法与数据结构/11递归与分治" },
+      //       { text: "动态规划", link: "/notes/算法与数据结构/12动态规划" },
+      //       { text: "贪心算法", link: "/notes/算法与数据结构/13贪心算法" },
+      //       {
+      //         text: "回溯与分支极限",
+      //         link: "/notes/算法与数据结构/14回溯与分支界限",
+      //       },
+      //       {
+      //         text: "经典算法实现",
+      //         link: "/notes/算法与数据结构/15经典算法实现",
+      //       },
+      //       { text: "剑指Offer", link: "/notes/算法与数据结构/16剑指Offer" },
+      //     ],
+      //   },
+      //   {
+      //     text: "计算机基础知识",
+      //     collapsed: false,
+      //     items: [
+      //       {
+      //         text: "操作系统基础",
+      //         link: "/notes/计算机基础知识/01操作系统基础",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "数据库一期",
+      //     collapsed: false,
+      //     items: [
+      //       { text: "数据库系统概述", link: "/notes/数据库01/01数据库系统概述" },
+      //       { text: "关系数据库", link: "/notes/数据库01/02关系数据库" },
+      //       { text: "SQL(重点)", link: "/notes/数据库01/03SQL(重点)" },
+      //       {
+      //         text: "数据库管理与维护(重点)",
+      //         link: "/notes/数据库01/05数据库管理与维护(重点)",
+      //       },
+      //       {
+      //         text: "关系数据理论(重点)",
+      //         link: "/notes/数据库01/06关系数据理论(重点)",
+      //       },
+      //       { text: "数据库设计", link: "/notes/数据库01/07数据库设计" },
+      //     ],
+      //   },
+      //   {
+      //     text: "JavaScript[待更新]",
+      //     collapsed: false,
+      //     items: [
+      //       {
+      //         text: "JS常见手写面试题",
+      //         link: "/notes/JavaScript/01JS常见手写面试题",
+      //       },
+      //     ],
+      //   },
+
+      //   {
+      //     text: "NestJS",
+      //     collapsed: false,
+      //     items: [
+      //       { text: "controller", link: "/notes/NestJS/01controller" },
+      //       { text: "service", link: "/notes/NestJS/02service" },
+      //       { text: "module", link: "/notes/NestJS/03module" },
+      //       { text: "DTO", link: "/notes/NestJS/04DTO" },
+      //       { text: "postgreSQL", link: "/notes/NestJS/05postgreSQL" },
+      //       { text: "原理细节", link: "/notes/NestJS/06原理细节" },
+      //       { text: "应用配置", link: "/notes/NestJS/07应用配置" },
+      //       { text: "更多模块", link: "/notes/NestJS/08更多模块" },
+      //       { text: "openAPI", link: "/notes/NestJS/09openAPI" },
+      //       { text: "测试", link: "/notes/NestJS/10测试" },
+      //     ],
+      //   },
+
+      //   {
+      //     text: "后端储备",
+      //     collapsed: false,
+      //     items: [
+      //       {
+      //         text: "Django进阶学习笔记",
+      //         link: "/notes/后端储备/01Django进阶学习笔记",
+      //       },
+      //       { text: "DRF学习笔记", link: "/notes/后端储备/02DRF学习笔记" },
+      //       { text: "Redis学习笔记", link: "/notes/后端储备/03Redis学习笔记" },
+      //     ],
+      //   },
       {
         text: "Web3.0",
         collapsed: false,
