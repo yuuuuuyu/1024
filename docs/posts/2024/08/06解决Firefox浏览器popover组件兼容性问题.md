@@ -32,7 +32,7 @@ tags:
 2. 使用microapp
 3. 功能内使用了popover无效
    
-![](https://ebugs.l2.ttut.cc/drawing-bed/20240428/1.png)
+![](http://ebugs.l2.ttut.cc/drawing-bed/20240428/1.png)
 
 ### 解决方案
 
