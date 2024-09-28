@@ -314,7 +314,7 @@ const patchKeyedChildren = (
 :::tip
 图形展示可以结合源码理解。
 
-[diff比较长图](https://ebugs.l2.ttut.cc/drawing-bed/20240527/0.jpg)
+[diff比较长图](http://ebugs.l2.ttut.cc/drawing-bed/20240527/0.jpg)
 :::
 <drawing-bed src="20240527/1.png" alt="20240527/1.png"/>
 <drawing-bed src="20240527/2.png" alt="20240527/1.png"/>
