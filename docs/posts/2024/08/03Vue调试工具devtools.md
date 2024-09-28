@@ -35,7 +35,7 @@ export default defineConfig({
 ```
 
 ## 使用
-![vite-plugin-vue-devtools面板](./images/1.png)
-![vite-plugin-vue-devtools面板](./images/2.png)
+![vite-plugin-vue-devtools面板](http://ebugs.l2.ttut.cc/drawing-bed/20240926/devtools1.png)
+![vite-plugin-vue-devtools面板](http://ebugs.l2.ttut.cc/drawing-bed/20240926/devtools2.png)
 
 tips: 只在本地开发时会在页面加载，线上环境是不会加载的
