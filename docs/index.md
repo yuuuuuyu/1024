@@ -37,14 +37,14 @@ isNoBackBtn: true
     :total="total"
     size="small"
     :showPageSize="false"
-    :showPageNumber="!isMobile()"
-    :showJumper="isMobile()"
+    :showPageNumber="!isMobile"
+    :showJumper="isMobile"
     @current-change="onCurrentChange"
   />
 </div>
 
 <script lang="ts" setup>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 // 非 Vue 组件需要手动引入
 import {
 	MessagePlugin,
@@ -54,13 +54,10 @@ import {
 } from "tdesign-vue-next";
 
 import { data as posts } from "./.vitepress/theme/posts.data.mts";
-import { isMobile } from "./.vitepress/theme/utils/mobile.ts";
+import { isMobile as checkIsMobile } from "./.vitepress/theme/utils/mobile.ts";
 
-const search = window.location.search.slice(1);
-const searchParams = new URLSearchParams(search);
-const page = searchParams.get("page") || 1;
-
-const current = ref(+page);
+const isMobile = ref(false);
+const current = ref(1);
 const pageSize = ref(10);
 const total = ref(posts.length);
 
@@ -85,7 +82,18 @@ const onCurrentChange: PaginationProps["onCurrentChange"] = (
 		top: 0,
 	});
 };
+
+onMounted(() => {
+  // 只在客户端执行的代码
+  const search = window.location.search.slice(1);
+  const searchParams = new URLSearchParams(search);
+  const page = searchParams.get("page") || 1;
+
+  current.value = +page;
+  isMobile.value = checkIsMobile();
+});
 </script>
+
 <style lang="scss" scoped>
 /* 去掉.vp-doc li + li 的 margin-top */
 .pagination-container {

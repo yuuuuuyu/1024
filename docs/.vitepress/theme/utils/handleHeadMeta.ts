@@ -11,7 +11,7 @@ export function handleHeadMeta(context: TransformContext) {
   // 预加载字体
   const preloadHead: HeadConfig[] = handleFontsPreload(context)
 
-  return [...twitterHead, ...preloadHead]
+  return [...preloadHead]
 }
 
 export function addBase(relativePath: string) {
@@ -46,3 +46,4 @@ export function handleFontsPreload({ assets }: TransformContext) {
 
   return []
 }
+

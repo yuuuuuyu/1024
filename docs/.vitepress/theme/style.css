@@ -181,3 +181,11 @@ main>div>div>pre>code {
 .aside .aside-container {
     width: 320px;
 }
+
+.dark .t-tag--text {
+    color: #fff;
+}
+
+.dark .t-image-viewer__modal-header {
+    background-color: var(--td-bg-color-container);
+}
